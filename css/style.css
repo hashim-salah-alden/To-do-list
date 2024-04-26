@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+  margin:100px auto;
+  width:600px;  
+  overflow: hidden;
+}
+
+.container .app-header
+{
+    background-color: #156baf;
+    padding:15px;
+}
+
+.container .app-header input 
+{
+    width:calc(100% - 50px);
+    height: 40px;
+    outline: none;
+    font-size:20px;
+    color:#FFF;
+    background-color:rgba(255 , 255, 255, .3);
+    border:none;
+    padding: 0 10px 
+}
+
+.container .app-header .plus {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #2196F3;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
+    display: inline-block;
+    text-align: center;
+    line-height: 24px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.container .tasks-container {
+    background-color:#CCC;
+    padding:15px;
+}
+
+.container .tasks-container > span{
+    background-color:#DDD;
+    color:#999;
+    padding:15px;
+    display: block;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container .tasks-container .task-box
+{
+    background-color: #2f76af;
+    color: #FFF;
+}
+
+.container .tasks-container .task-box.finshed{
+    text-decoration: line-through;
+}
+
+.container .tasks-container > span:not(:last-child)
+{
+    margin-bottom: 10px;
+}
+
+.container .tasks-container .task-box .delete {
+    display: block;
+    background-color: #155486;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    position: absolute;
+    right:10px;
+    top:10px;
+    cursor: pointer;
+}
+
+.container .tasks-stats > div 
+{
+    float: left;
+    width: 50%;
+    padding: 15px;
+}
+
+.container .tasks-stats .tasks-finshed {text-align: right;}
+
+.container .tasks-stats .tasks-count span,
+.container .tasks-stats .tasks-finshed span
+{
+    background-color: #2196F3;
+    padding: 10px 10px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    /* max-width: 116px; */
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+}
+
+.container .tasks-stats .tasks-finshed span {background-color:#e91e69}
+
